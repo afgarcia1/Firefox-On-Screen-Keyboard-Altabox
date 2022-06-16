@@ -321,9 +321,6 @@ var fxKeyboard = {
                 this.focusElement = null;
             }
         }
-
-        console.log(this.focusElementYTop);
-        console.log(this.focusElementYBottom);
     },
 	
 	_isOSKOpen: function() {
@@ -490,7 +487,7 @@ var fxKeyboard = {
         key.style.alignItems = "center";
         key.style.justifyContent = "center";
         key.style.borderRadius = 5*this.settings.scale+"px";
-        key.style.cursor = "pointer";
+        key.style.cursor = "none";
         key.style.backgroundColor = "rgb(255,255,255)";             //ANGEL Cambiar color fondo de teclas 
         key.innerHTML = char;
         key.onmouseenter = function(){key.style.backgroundColor = "rgb(200,200,200)";};
@@ -529,7 +526,7 @@ var fxKeyboard = {
         key.style.alignItems = "center";
         key.style.justifyContent = "center";
         key.style.borderRadius = 5*this.settings.scale+"px";
-        key.style.cursor = "pointer";
+        key.style.cursor = "none";
 		key.style.flexGrow = flex;
         key.style.backgroundColor = "rgb(255,255,255)";
         key.innerHTML = char;
@@ -562,7 +559,7 @@ var fxKeyboard = {
         key.style.display = "flex";
         key.style.alignItems = "center";
         key.style.justifyContent = "center";
-        key.style.cursor = "pointer";
+        key.style.cursor = "none";
         key.style.flexGrow = obj.flex;
         key.id = "fxkey-"+obj.label.toLowerCase();
         key.style.borderRadius = 5*this.settings.scale + "px";
