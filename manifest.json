@@ -35,7 +35,7 @@
 	},
     "browser_specific_settings": {
         "gecko": {
-          "id": "desarrollo@altabox.net",
+          "id": "tecladoOnScreen@altabox.net",
           "strict_min_version": "42.0",
           "update_url": "https://github.com/afgarcia1/Firefox-On-Screen-Keyboard-Altabox"
         }
