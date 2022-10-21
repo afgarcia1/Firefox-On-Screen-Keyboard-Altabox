@@ -387,8 +387,11 @@ var fxKeyboard = {
             };
         } else if (obj.label === "Enter") {
             keyD.onmouseup = function () {
+                fxKeyboard._toggleOpen(false);
                 keyD.style.backgroundColor = "rgb(255,255,255)";
-				fxKeyboard._sendKey(obj.label);
+                fxKeyboard.lastPress = "close";
+                //keyD.style.backgroundColor = "rgb(255,255,255)";
+				//fxKeyboard._sendKey(obj.label);
             };
         } else if (obj.label === "Tab") {
 			keyD.onmouseup = function () {
